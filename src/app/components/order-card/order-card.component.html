@@ -1,0 +1,18 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle style=" color: #2dd36f;">Order Number</ion-card-subtitle>
+    <ion-card-title>{{order.id}}</ion-card-title>
+  </ion-card-header>
+  <ion-item>
+
+    <ion-label style="font-size:large;">Order Status: {{order.doneOrNot}}</ion-label>
+    <ion-button fill="outline" slot="end" style="color: #2dd36f;" (click)="displayCustomerDetails()">Start
+    </ion-button>
+
+
+  </ion-item>
+  Confirm Delivery
+  <ion-card-content>
+    <ion-icon name="checkmark-circle-outline" style="color: #2dd36f; font-size: 40px;"></ion-icon>
+  </ion-card-content>
+</ion-card>

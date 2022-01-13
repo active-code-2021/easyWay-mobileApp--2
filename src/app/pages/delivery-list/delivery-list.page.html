@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Deliveries for today</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <app-order-card *ngFor="let order of orders" [order]='order'></app-order-card>
+
+  <!-- <app-order-in-process></app-order-in-process> -->
+  <a
+    href="https://www.waze.com/he/live-map/directions?navigate=yes&to=32.04952643540887,34.95699514455479&from={{lat}},{{long}}">
+    Go</a>
+</ion-content>

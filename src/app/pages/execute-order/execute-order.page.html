@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar color="success">
+    <ion-buttons slot="start">
+      <ion-back-button text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title>Order </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="order">
+  <!-- <ion-card-header>
+    
+    <ion-card-title></ion-card-title>
+  </ion-card-header>
+  <div></div> -->
+
+  <!-- <div class="icons-flex"> -->
+
+  <ion-icon name="person"> </ion-icon>
+  <h4>{{order.name}}</h4>
+
+
+  <br><br>
+  <ion-icon name="call"></ion-icon>
+
+  <!-- <br><br>
+ -->
+
+  <ion-icon name="mail"></ion-icon>
+  <!-- <br><br> -->
+  <ion-icon name="location"></ion-icon>
+  <!-- <br><br> -->
+  <a
+    href="https://www.waze.com/he/live-map/directions?navigate=yes&to={{order.addressLon}},{{order.addressLat}}&from={{lat}},{{long}}">
+    Go</a>
+
+</ion-content>
